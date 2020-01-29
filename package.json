@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://valeriubahov.github.io/portfolio",
   "dependencies": {
+    "gh-pages": "^2.2.0",
     "@carbon/icons-react": "^10.8.1",
     "@carbon/themes": "^10.9.2",
     "@testing-library/jest-dom": "^4.2.4",
@@ -21,10 +22,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,8 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^2.2.0"
   }
 }

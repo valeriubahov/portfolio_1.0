@@ -5,4 +5,3 @@ export const ProfileLink = styled.li`
   margin-bottom: 0.5rem;
   display: inline-block;
   font-size: 18px;
-`

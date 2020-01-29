@@ -1,4 +1,4 @@
-mport React from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Me from './Me';
 import Projects from './Projects';

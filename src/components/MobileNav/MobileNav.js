@@ -8,19 +8,11 @@ const MobileNav = () => {
     <Container>
       <Spacer />
       <NavWrapper>
-        <NavLink to="/">
+        <NavLink to="/portfolio">
           <NavButton
             hasIconOnly
             renderIcon={User32}
-            iconDescription="Me"
-            tooltipPosition="bottom"
-          />
-        </NavLink>
-        <NavLink to="/projects">
-          <NavButton
-            hasIconOnly
-            renderIcon={Code32}
-            iconDescription="Projects"
+            iconDescription="About me"
             tooltipPosition="bottom"
           />
         </NavLink>
@@ -28,7 +20,16 @@ const MobileNav = () => {
           <NavButton
             hasIconOnly
             renderIcon={Portfolio32}
-            iconDescription="Work"
+            iconDescription="Experience"
+            tooltipPosition="bottom"
+          />
+          
+        </NavLink>
+        <NavLink to="/projects">
+          <NavButton
+            hasIconOnly
+            renderIcon={Code32}
+            iconDescription="Projects"
             tooltipPosition="bottom"
           />
         </NavLink>

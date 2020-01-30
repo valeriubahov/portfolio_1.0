@@ -24,14 +24,14 @@ const UserHeader = ({ user }) => {
           </h4>
           <p>{user.basics.label}</p>
           <p>Location {user.basics.region}</p>
-          <p>{user.basics.yearsOfExperience} years of experience as a developer</p>
+          <p>{user.basics.yearsOfExperience} years of experience as a Software Developer</p>
           <p>{user.basics.headline}</p>
 
         </div>
       </Header>
       <div>
         <ViewResumeLink
-          href={`https://gitconnected.com/${user.basics.username}/resume`}
+          href={`https://drive.google.com/open?id=1959FAnB_5RAOQFvMSWlw6YZ5jl3GtRVP`}
           target="_blank"
           rel="noopener noreferrer"
         >

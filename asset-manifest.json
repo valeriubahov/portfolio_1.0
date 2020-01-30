@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://valeriubahov.github.io/portfolio/static/css/main.613a74b2.chunk.css",
-    "main.js": "https://valeriubahov.github.io/portfolio/static/js/main.d211317f.chunk.js",
-    "main.js.map": "https://valeriubahov.github.io/portfolio/static/js/main.d211317f.chunk.js.map",
+    "main.js": "https://valeriubahov.github.io/portfolio/static/js/main.0161fadb.chunk.js",
+    "main.js.map": "https://valeriubahov.github.io/portfolio/static/js/main.0161fadb.chunk.js.map",
     "runtime-main.js": "https://valeriubahov.github.io/portfolio/static/js/runtime-main.520e7622.js",
     "runtime-main.js.map": "https://valeriubahov.github.io/portfolio/static/js/runtime-main.520e7622.js.map",
     "static/js/2.00435472.chunk.js": "https://valeriubahov.github.io/portfolio/static/js/2.00435472.chunk.js",
     "static/js/2.00435472.chunk.js.map": "https://valeriubahov.github.io/portfolio/static/js/2.00435472.chunk.js.map",
     "index.html": "https://valeriubahov.github.io/portfolio/index.html",
-    "precache-manifest.2ca2b09dfa9648b826e51956af771cc7.js": "https://valeriubahov.github.io/portfolio/precache-manifest.2ca2b09dfa9648b826e51956af771cc7.js",
+    "precache-manifest.a77c45122d75da5bac5a49dd572fd215.js": "https://valeriubahov.github.io/portfolio/precache-manifest.a77c45122d75da5bac5a49dd572fd215.js",
     "service-worker.js": "https://valeriubahov.github.io/portfolio/service-worker.js",
     "static/css/main.613a74b2.chunk.css.map": "https://valeriubahov.github.io/portfolio/static/css/main.613a74b2.chunk.css.map",
     "static/js/2.00435472.chunk.js.LICENSE": "https://valeriubahov.github.io/portfolio/static/js/2.00435472.chunk.js.LICENSE"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.520e7622.js",
     "static/js/2.00435472.chunk.js",
     "static/css/main.613a74b2.chunk.css",
-    "static/js/main.d211317f.chunk.js"
+    "static/js/main.0161fadb.chunk.js"
   ]
 }

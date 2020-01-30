@@ -5,7 +5,7 @@ import { SideNavItems, SideNavLink } from 'carbon-components-react/lib/component
 import { StyledSideNav } from './styles';
 
 const items = [
-  { name: 'About me', path: '/' },
+  { name: 'About me', path: '/portfolio' },
   { name: 'Experience', path: '/work' },
   { name: 'Projects', path: '/projects' },
   { name: 'Eduction', path: '/education' },
@@ -20,7 +20,7 @@ const Sidebar = () => {
         {items.map(i => (
           <SideNavLink
             isActive={
-              location.pathname === '/' && i.path === '/' ? true : location.pathname === i.path
+              location.pathname === '/portfolio' && i.path === '/portfolio' ? true : location.pathname === i.path
             }
             element={Link}
             to={i.path}

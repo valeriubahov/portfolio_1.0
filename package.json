@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://valeriubahov.github.io/portfolio",
+  "homepage": "http://valeriubahov.github.io/portfolio/",
   "dependencies": {
     "@carbon/icons-react": "^10.8.1",
     "@carbon/themes": "^10.9.2",

@@ -8,17 +8,20 @@ export const ProfileLink = styled.li`
 `;
 
 export const ProgressBar = styled.div`
-margin-right: 0.5rem;
-margin-bottom: 0.5rem;
-width:10%;
+margin-right: 1rem;
+margin-bottom: 1rem;
 display: inline-block;
-position: relative;
 `;
 
 export const Scrollable = styled.div`
-overflow-x: scroll;
+overflow-x: none;
 overflow-y: hidden;
 white-space: nowrap;
-position: relative;
+`;
+
+export const CenterDiv = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
 `;
 

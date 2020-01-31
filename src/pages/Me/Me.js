@@ -1,7 +1,10 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { SectionTitle, Paragraph, Pill } from '../../styles';
-import { ProfileLink } from './styles';
+import { ProfileLink, ProgressBar, Scrollable } from './styles';
+import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+
 
 const Me = ({ user }) => {
   return (
@@ -12,11 +15,17 @@ const Me = ({ user }) => {
       </div>
       <div>
         <SectionTitle>Skills</SectionTitle>
-        <div>
-          {user.skills.map(skill => (
-            <Pill key={skill.name}>{skill.name}</Pill>
+        <Scrollable>
+          {user.skills.map((skill, i) => (
+            <ProgressBar key={i}>
+              <CircularProgressbarWithChildren value={skill.rating * 20}>
+                <div style={{ fontSize: 10 }}>
+                  <Pill key={skill.name}>{skill.rating * 20}% {skill.name}</Pill>
+                </div>
+              </CircularProgressbarWithChildren>
+            </ProgressBar>
           ))}
-        </div>
+        </Scrollable>
       </div>
       <div>
         <SectionTitle>Profiles</SectionTitle>

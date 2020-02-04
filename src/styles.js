@@ -7,8 +7,21 @@ export const SectionTitle = styled.h3`
 `;
 
 export const Paragraph = styled.p`
-  white-space: pre-wrap;
+display: inline-block;
+vertical-align: middle;
+line-height: normal;
 `;
+
+export const AboutMe = styled.div`
+margin: auto;
+height: 50%;
+width: 80%;
+line-height: 100px;
+vertical-align: middle;
+text-align: center;
+`;
+
+
 
 export const Pill = styled.span`
   display: inline-block;

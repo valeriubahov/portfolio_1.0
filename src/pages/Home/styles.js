@@ -19,18 +19,9 @@ overflow-y: hidden;
 white-space: nowrap;
 `;
 
-export const Write = styled.div`
-display: inline-block;
-position: fixed;
-top: 0;
-bottom: 0;
-left: 0;
-right: 0;
-margin: auto;
-height: 50%;
-width: 80%;
-line-height: 100px;
-vertical-align: middle;
-text-align: center;
+export const CenterDiv = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
 `;
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { ArrowRight16 } from '@carbon/icons-react';
+import {AboutMe } from '../../styles';
 
 import { HeaderContainer, Header, Image, ViewResumeLink } from './styles';
 
@@ -8,10 +9,10 @@ const UserHeader = ({ user }) => {
   const location = useLocation();
 
   return (
-    <HeaderContainer isHome={location.pathname === '/'}>
+    <HeaderContainer isHome={location.pathname !== '/home'}>
       <Header>
         <Image src={user.basics.picture} />
-        <div>
+        <AboutMe>
           <h2>{user.basics.name}</h2>
           <h4>
             <a
@@ -27,7 +28,7 @@ const UserHeader = ({ user }) => {
           <p>{user.basics.yearsOfExperience} years of experience as a Software Developer</p>
           <p>{user.basics.headline}</p>
 
-        </div>
+        </AboutMe>
       </Header>
       <div>
         <ViewResumeLink

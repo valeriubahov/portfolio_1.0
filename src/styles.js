@@ -10,6 +10,7 @@ export const Paragraph = styled.p`
 display: inline-block;
 vertical-align: middle;
 line-height: normal;
+white-space: pre-line;
 `;
 
 export const AboutMe = styled.div`

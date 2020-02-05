@@ -15,9 +15,11 @@ const Work = ({ user }) => {
               <div>
                 <JobTitle>{work.company}</JobTitle> <span>{work.location}</span>
                 <span> &sdot; </span>
-                <span>
-                  {work.start.month}/{work.start.year} to  {work.end.month}/{work.end.year}
-                </span>
+                {work.end.month ? (
+                  <span>{work.start.month}/{work.start.year} to  {work.end.month}/{work.end.year}</span>
+                ) : (
+                    <span>{work.start.month}/{work.start.year} to  Present </span>
+                    )}
               </div>
               <Paragraph>{work.summary}</Paragraph>
             </WorkItem>

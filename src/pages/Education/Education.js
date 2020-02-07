@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { SectionTitle, Paragraph, AboutMe } from '../../styles';
-import { EducationItem, Institution, Degree } from './styles';
+import { EducationItem, Institution, Degree, Experience } from './styles';
 
 
 class Education extends React.Component {
@@ -13,7 +13,9 @@ class Education extends React.Component {
     return (
       <Layout user={this.props.user}>
         <AboutMe>
+       <Experience>
           <SectionTitle>Education</SectionTitle>
+          </Experience>
           <ul>
             {this.props.user.education.map((education, i) => (
               <EducationItem key={i}>
@@ -22,12 +24,11 @@ class Education extends React.Component {
                   <Degree>
                     {education.studyType}, {education.area}
                   </Degree>{' '}
-                  <span> &sdot; </span>
-                  {education.end.year !== '' && (
-                  <span>
-                    {education.start.year} to {education.end.year}
-                  </span>
-                  )}
+                  <div>
+                    {education.end.year !== '' && (
+                      <Paragraph>From {education.start.year} to {education.end.year}</Paragraph>
+                    )}
+                  </div>
                 </div>
                 <Paragraph>{education.description.replace('\n\n', '\n')}</Paragraph>
               </EducationItem>
@@ -39,6 +40,6 @@ class Education extends React.Component {
   }
 }
 
-  
+
 export default Education;
 

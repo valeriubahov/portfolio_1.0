@@ -1,32 +1,36 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import { SectionTitle, Paragraph } from '../../styles';
-import { WorkItem, WorkTitle, JobTitle } from './styles';
+import { SectionTitle, Paragraph, AboutMe } from '../../styles';
+import { WorkItem, WorkTitle, JobTitle, Experience } from './styles';
 
 const Work = ({ user }) => {
   return (
     <Layout user={user}>
-      <div>
-        <SectionTitle>Experience</SectionTitle>
+      <AboutMe>
+        <Experience>
+          <SectionTitle>Experience</SectionTitle>
+        </Experience>
         <ul>
           {user.work.map((work, i) => (
             <WorkItem key={i}>
               <WorkTitle>{work.position}</WorkTitle>
+              <JobTitle>{work.company}</JobTitle> <Paragraph>{work.location}</Paragraph>
               <div>
-                <JobTitle>{work.company}</JobTitle> <span>{work.location}</span>
-                <span> &sdot; </span>
                 {work.end.month ? (
-                  <span>{work.start.month}/{work.start.year} to  {work.end.month}/{work.end.year}</span>
+                  <Paragraph>From {work.start.month}/{work.start.year} to  {work.end.month}/{work.end.year}</Paragraph>
                 ) : (
-                    <span>{work.start.month}/{work.start.year} to  Present </span>
-                    )}
+                    <Paragraph>From {work.start.month}/{work.start.year} to Present</Paragraph>
+                  )}
               </div>
+              <br></br>
               <Paragraph>{work.summary}</Paragraph>
             </WorkItem>
           ))}
         </ul>
-      </div>
+
+      </AboutMe>
     </Layout>
+
   );
 };
 

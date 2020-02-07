@@ -1,9 +1,19 @@
 import styled from 'styled-components';
 import { blue } from '@carbon/colors';
+import { gray } from '@carbon/colors';
 
 export const SectionTitle = styled.h3`
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+position:relative;
+top:11px;
+display: inline-block;
+margin-bottom: 0.5rem;
+white-space: nowrap;
+background: #161616;
+color: white;
+border-left: 2px solid ${gray[90]};
+border-right: 2px solid ${gray[90]};
+border-top: 2px solid ${gray[90]};
+border-radius: 16px 16px 0px 0px;
 `;
 
 export const Paragraph = styled.p`
@@ -15,14 +25,12 @@ white-space: pre-line;
 
 export const AboutMe = styled.div`
 margin: auto;
-height: 50%;
-width: 80%;
-line-height: 100px;
+height: 20%;
+width: 100%;
+line-height: 30px;
 vertical-align: middle;
 text-align: center;
 `;
-
-
 
 export const Pill = styled.span`
   display: inline-block;

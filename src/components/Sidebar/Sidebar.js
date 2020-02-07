@@ -16,6 +16,7 @@ const Sidebar = () => {
 
   return (
     <StyledSideNav isFixedNav expanded isChildOfHeader={false} aria-label="Side navigation">
+      
       <SideNavItems>
         {items.map(i => (
           <SideNavLink

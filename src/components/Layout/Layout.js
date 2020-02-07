@@ -9,7 +9,7 @@ const Layout = ({ user, children }) => {
   return (
     <>
       <MobileNav />
-      <Sidebar />
+      <Sidebar user={user}/>
       <StyledContent>
         <UserHeader user={user} />
         <div>{children}</div>

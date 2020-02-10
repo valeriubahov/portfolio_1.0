@@ -10,9 +10,9 @@ margin-bottom: 0.5rem;
 white-space: nowrap;
 background: #161616;
 color: white;
-border-left: 2px solid ${gray[90]};
-border-right: 2px solid ${gray[90]};
-border-top: 2px solid ${gray[90]};
+border-left: 0px solid ${gray[90]};
+border-right: 0px solid ${gray[90]};
+border-top: 0px solid ${gray[90]};
 border-radius: 16px 16px 0px 0px;
 `;
 

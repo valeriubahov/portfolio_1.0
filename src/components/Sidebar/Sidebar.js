@@ -1,14 +1,21 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { SideNavItems, SideNavLink } from 'carbon-components-react/lib/components/UIShell';
-
-import { StyledSideNav, Image, CenterDiv } from './styles';
+import { ArrowRight16 } from '@carbon/icons-react';
+import { StyledSideNav, Image, ViewResumeLink, CenterDiv, Div } from './styles';
+import Typical from 'react-typical';
 
 const items = [
-  { name: 'Home', path: '/' },
-  { name: 'About me', path: '/home' },
+  { name: 'About me', path: '/' },
   { name: 'Experience', path: '/work' },
   { name: 'Eduction', path: '/education' },
+];
+
+const steps = [
+  "Frontend Developer", 1000,
+  "React Developer", 1000,
+  "Backend Developer", 1000,
+  "Full-stack Developer", 1000
 ];
 
 
@@ -18,13 +25,18 @@ const Sidebar = ({ user }) => {
   return (
     <StyledSideNav isFixedNav expanded isChildOfHeader={false} aria-label="Side navigation">
       <SideNavItems>
+        <Image src={user.basics.picture} />
         <CenterDiv>
-          <Image src={user.basics.picture} />
-          </CenterDiv>
+          <Typical
+            steps={steps}
+            loop={Infinity}
+            wrapper="b"
+          />
+        </CenterDiv>
         {items.map(i => (
           <SideNavLink
             isActive={
-              location.pathname === '/home' && i.path === '/home' ? true : location.pathname === i.path
+              location.pathname === '/' && i.path === '/' ? true : location.pathname === i.path
             }
             element={Link}
             to={i.path}
@@ -33,6 +45,13 @@ const Sidebar = ({ user }) => {
             {i.name}
           </SideNavLink>
         ))}
+        <ViewResumeLink
+          href={`https://drive.google.com/open?id=1959FAnB_5RAOQFvMSWlw6YZ5jl3GtRVP`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>View Résumé</span>
+        </ViewResumeLink>
       </SideNavItems>
     </StyledSideNav>
   );

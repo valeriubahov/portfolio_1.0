@@ -1,15 +1,13 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { ArrowRight16 } from '@carbon/icons-react';
-import { AboutMe, Paragraph, SectionTitle } from '../../styles';
+import { AboutMe, Paragraph } from '../../styles';
 
-import { HeaderContainer, Div, Header, Image, ViewResumeLink } from './styles';
+import { HeaderContainer, Div } from './styles';
 
 const UserHeader = ({ user }) => {
   const location = useLocation();
-
   return (
-    <HeaderContainer isHome={location.pathname !== '/home'}>
+    <HeaderContainer isHome={location.pathname !== '/'}>
       <AboutMe>
         <Div>
           <Paragraph>
@@ -21,21 +19,7 @@ const UserHeader = ({ user }) => {
           </Paragraph>
         </Div>
       </AboutMe>
-
-
-      {/* <div>
-        <ViewResumeLink
-          href={`https://drive.google.com/open?id=1959FAnB_5RAOQFvMSWlw6YZ5jl3GtRVP`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span>View Résumé</span>
-          <ArrowRight16 />
-        </ViewResumeLink>
-      </div> */}
-
     </HeaderContainer>
-    
   );
 };
 

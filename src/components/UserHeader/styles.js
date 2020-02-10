@@ -22,11 +22,11 @@ export const Header = styled.div`
 `;
 
 export const Image = styled.img`
+  position:relative;
   border-radius: 50%;
-  margin-bottom: 50px;
   align-items: center;
   justify-content: center;
-  border: 1vh solid #232d3622;
+
 `;
 
 export const Div = styled.div`

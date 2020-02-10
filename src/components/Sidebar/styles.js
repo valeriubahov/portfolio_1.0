@@ -9,16 +9,46 @@ display: inline-block;
 `
 
 export const Image = styled.img`
-  align: center;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  border: 1vh solid #232d3622;
+display: inline-block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
 `;
 
 export const CenterDiv = styled.div`
-display: inline-block;
-width: 100%;
+display: flex;
 align-items: center;
 justify-content: center;
+color: #3e98c7;
+font-size: 15px;
+word-spacing: 2px;
+font-weight: 400;
+font-weight: bold;
+`;
+
+
+export const ViewResumeLink = styled.a`
+  background-color: #3e98c7;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.125rem;
+  letter-spacing: 0.16px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  min-height: 2rem;
+  padding: 0 1rem;
+  transition: background-color 250ms ease;
+  &:hover {
+    background-color: #2ecc40;
+  }
+  svg {
+    fill: white;
+    margin-left: 8px;
+    align:center;
+  }
 `;

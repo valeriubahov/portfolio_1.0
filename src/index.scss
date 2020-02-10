@@ -14,6 +14,7 @@ a {
 
 a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
+  
   background-color: $ui-01;
   color: $text-04;
 }
@@ -29,4 +30,18 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
   > .bx--side-nav__link:hover
   > span {
   color: $text-04;
+}
+
+.bx--side-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms ease;
+}
+
+.bx--side-nav__items {
+  display: inline-block;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
 }

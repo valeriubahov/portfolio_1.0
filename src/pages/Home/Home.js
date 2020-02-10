@@ -9,6 +9,7 @@ import {
 import { easeQuadInOut } from "d3-ease";
 import AnimatedProgressProvider from "./AnimatedProgressProvider";
 import 'react-circular-progressbar/dist/styles.css';
+import { SocialIcon } from 'react-social-icons';
 
 
 class Home extends React.Component {
@@ -64,10 +65,11 @@ class Home extends React.Component {
             <ul>
               {this.props.user.basics.profiles.map((profile, i) => (
                 <ProfileLink key={profile.network}>
-                  {i !== 0 && ' | '}
-                  <a href={profile.url} target="_blank" rel="noreferrer noopener">
-                    {profile.network}
-                  </a>
+                  {i !== 0 && ''}
+                  
+                  <SocialIcon url={profile.url} />
+                 
+
                 </ProfileLink>
               ))}
             </ul>

@@ -15,10 +15,10 @@ text-transform: none;
 margin-top: 3rem;
 padding-bottom: 1rem;
 padding-top: 1rem;
-border-bottom: 2px solid ${gray[90]};
-border-left: 2px solid ${gray[90]};
-border-right: 2px solid ${gray[90]};
-border-top: 2px solid ${gray[90]};
+border-bottom: 0px solid ${gray[90]};
+border-left: 0px solid ${gray[90]};
+border-right: 0px solid ${gray[90]};
+border-top: 0px solid ${gray[90]};
 border-radius: 16px 16px 16px 16px;
 `
 export const Experience = styled.div`

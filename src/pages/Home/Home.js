@@ -46,8 +46,6 @@ class Home extends React.Component {
                         <CircularProgressbar
                           value={value}
                           text={`${roundedValue}% ${skill.name}`}
-                          /* This is important to include, because if you're fully managing the
-                          animation yourself, you'll want to disable the CSS animation. */
                           styles={buildStyles({ pathTransition: "none", textSize: '11px' })}
                         />
                       );
@@ -66,10 +64,7 @@ class Home extends React.Component {
               {this.props.user.basics.profiles.map((profile, i) => (
                 <ProfileLink key={profile.network}>
                   {i !== 0 && ''}
-                  
                   <SocialIcon url={profile.url} />
-                 
-
                 </ProfileLink>
               ))}
             </ul>

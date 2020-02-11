@@ -2,7 +2,6 @@ import styled from 'styled-components'
 import { gray } from '@carbon/colors';
 
 export const EducationItem = styled.li`
-background: #161616;
 color: white;
 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 font-size: 25px;
@@ -14,11 +13,7 @@ text-transform: none;
 margin-top: 3rem;
 padding-bottom: 1rem;
 padding-top: 1rem;
-border-bottom: 0px solid ${gray[90]};
-border-left: 0px solid ${gray[90]};
-border-right: 0px solid ${gray[90]};
-border-top: 0px solid ${gray[90]};
-border-radius: 16px 16px 16px 16px;
+
 `
 export const Experience = styled.div`
 position:relative;
@@ -31,6 +26,10 @@ font-weight: bold;
 `
 
 export const Degree = styled.p`
-font-weight: bold;
-display: inline-block;
+top:15px;
+text-align:center;
+font-size: 30px;
+color: #86C232;
+font-family:'wire one', serif;
+font-weight:normal;
 `

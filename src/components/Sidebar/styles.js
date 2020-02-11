@@ -19,7 +19,7 @@ export const CenterDiv = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-color: #3e98c7;
+color: #86C232;
 font-size: 15px;
 word-spacing: 2px;
 font-weight: 400;
@@ -28,7 +28,7 @@ font-weight: bold;
 
 
 export const ViewResumeLink = styled.a`
-  background-color: #3e98c7;
+  
   outline: 2px solid transparent;
   outline-offset: -2px;
   font-size: 0.875rem;
@@ -44,7 +44,7 @@ export const ViewResumeLink = styled.a`
   padding: 0 1rem;
   transition: background-color 250ms ease;
   &:hover {
-    background-color: #2ecc40;
+    background-color: #86C232;
   }
   svg {
     fill: white;

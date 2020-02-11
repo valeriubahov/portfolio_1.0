@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import { SectionTitle, Paragraph, AboutMe } from '../../styles';
+import { SectionTitle, Paragraph, AboutMe, H1Reverse, ColorBlock, Screwc, Screwcc, H1Alone } from '../../styles';
 import { EducationItem, Institution, Degree, Experience } from './styles';
 
 
@@ -12,13 +12,12 @@ class Education extends React.Component {
   render() {
     return (
       <Layout user={this.props.user}>
-        <AboutMe>
-       <Experience>
-          <SectionTitle>Education</SectionTitle>
-          </Experience>
-          <ul>
-            {this.props.user.education.map((education, i) => (
-              <EducationItem key={i}>
+       <H1Alone>Education</H1Alone>
+        <ul>
+          {this.props.user.education.map((education, i) => (
+            <EducationItem key={i}>
+              <Screwc></Screwc>
+              <ColorBlock>
                 <Institution>{education.position}</Institution>
                 <div>
                   <Degree>
@@ -31,10 +30,11 @@ class Education extends React.Component {
                   </div>
                 </div>
                 <Paragraph>{education.description.replace('\n\n', '\n')}</Paragraph>
-              </EducationItem>
-            ))}
-          </ul>
-        </AboutMe>
+              </ColorBlock>
+              <Screwcc></Screwcc>
+            </EducationItem>
+          ))}
+        </ul>
       </Layout>
     )
   }

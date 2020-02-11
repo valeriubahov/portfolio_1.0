@@ -9,19 +9,19 @@ a {
 }
 
 .bx--side-nav__navigation {
-  background-color: #393939;
+  background-color: #222629;
 }
 
 a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
   
-  background-color: $ui-01;
+  background-color: #86C232;
   color: $text-04;
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link:hover {
-  background-color: $ui-01;
+  background-color: #86C232;
   color: $text-04;
 }
 
@@ -44,4 +44,10 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
   overflow-y: auto;
   align-items: center;
   justify-content: center;
+}
+
+.bx--content {
+  background: #222629;
+  transform: translate3d(0, 0, 0);
+  will-change: margin-left;
 }

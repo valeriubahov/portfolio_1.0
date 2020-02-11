@@ -35,7 +35,7 @@ const Sidebar = ({ user }) => {
         {items.map(i => (
           <SideNavLink
             isActive={
-              location.pathname === '/' && i.path === '/' ? true : location.pathname === i.path
+              location.pathname === '/home' && i.path === '/home' ? true : location.pathname === i.path
             }
             element={Link}
             to={i.path}

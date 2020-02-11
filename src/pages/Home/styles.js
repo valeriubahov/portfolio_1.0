@@ -19,25 +19,38 @@ export const Scrollable = styled.div`
 overflow-x: none;
 overflow-y: hidden;
 white-space: nowrap;
-background: #161616;
 color: white;
 width: 100%;
 height: 100%;
 font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
-  font-size: 25px;
-  font-weight: 400;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  margin-top: 2rem;
+font-size: 25px;
+font-weight: 400;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+margin-top: 2rem;
 padding-bottom: 1rem;
 padding-top: 1rem;
 padding-left:0.5rem;
-border-bottom: 0px solid ${gray[90]};
-border-left: 0px solid ${gray[90]};
-border-right: 0px solid ${gray[90]};
-border-top: 0px solid ${gray[90]};
-border-radius: 16px 16px 16px 16px;
+`;
+
+
+export const Unscrollable = styled.div`
+align-items: center;
+justify-content: center;
+color: white;
+width: 100%;
+height: 100%;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 25px;
+font-weight: 400;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+margin-top: 2rem;
+padding-bottom: 1rem;
+padding-top: 1rem;
+padding-left:0.5rem;
 `;
 
 export const CenterDiv = styled.div`

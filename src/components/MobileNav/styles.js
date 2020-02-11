@@ -27,6 +27,10 @@ export const NavLink = styled(Link)`
   width: 100%;
 `;
 
+export const NavResume = styled.a`
+  width: 100%;
+`;
+
 export const NavButton = styled(Button)`
   width: 100%;
   justify-content: center;

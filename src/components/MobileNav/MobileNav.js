@@ -1,7 +1,7 @@
 import React from 'react'
-import { User32, Home32, Portfolio32, Education32 } from '@carbon/icons-react'
+import { User32, Portfolio32, Education32, Document32 } from '@carbon/icons-react'
 
-import { Container, Spacer, NavWrapper, NavButton, NavLink } from './styles'
+import { Container, Spacer, NavWrapper, NavButton, NavLink, NavResume } from './styles'
 
 const MobileNav = () => {
   return (
@@ -32,6 +32,14 @@ const MobileNav = () => {
             tooltipPosition="bottom"
           />
         </NavLink>
+        <NavResume href={`https://drive.google.com/open?id=1959FAnB_5RAOQFvMSWlw6YZ5jl3GtRVP`}>
+          <NavButton
+            hasIconOnly
+            renderIcon={Document32}
+            iconDescription="View Résumé"
+            tooltipPosition="bottom"
+          />
+        </NavResume>
       </NavWrapper>
     </Container>
   )

@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { SideNavItems, SideNavLink } from 'carbon-components-react/lib/components/UIShell';
-import { ArrowRight16 } from '@carbon/icons-react';
-import { StyledSideNav, Image, ViewResumeLink, CenterDiv, Div } from './styles';
+import { StyledSideNav, Image, ViewResumeLink, CenterDiv } from './styles';
 import Typical from 'react-typical';
 
 const items = [

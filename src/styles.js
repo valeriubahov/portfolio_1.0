@@ -4,10 +4,11 @@ import { gray } from '@carbon/colors';
 
 export const SectionTitle = styled.h3`
 position:relative;
-top:11px;
+top:48px;
 display: inline-block;
 margin-bottom: 0.5rem;
 white-space: nowrap;
+margin-top: 2rem;
 background: #161616;
 color: white;
 border-left: 0px solid ${gray[90]};

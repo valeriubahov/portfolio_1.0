@@ -27,7 +27,7 @@ class Home extends React.Component {
             <Paragraph>{this.props.user.basics.summary}</Paragraph>
           </Scrollable>
         </AboutMe>
-        <br></br>
+      
         <AboutMe>
           <SectionTitle>Skills</SectionTitle>
           <CenterDiv>
@@ -56,7 +56,7 @@ class Home extends React.Component {
             </Scrollable>
           </CenterDiv>
         </AboutMe>
-        <br></br>
+       
         <AboutMe>
           <SectionTitle>Profiles</SectionTitle>
           <Scrollable>

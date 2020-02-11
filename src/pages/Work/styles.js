@@ -8,7 +8,7 @@ export const WorkItem = styled.li`
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 25px;
   letter-spacing: 2px;
-  word-spacing: 2px;
+
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
@@ -24,7 +24,7 @@ export const WorkItem = styled.li`
 `
 export const Experience = styled.div`
 position:relative;
-top:48px;
+top:15px;
 display: inline-block;
 `
 

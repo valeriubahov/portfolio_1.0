@@ -7,7 +7,7 @@ import Typical from 'react-typical';
 const items = [
   { name: 'About me', path: '/' },
   { name: 'Experience', path: '/work' },
-  { name: 'Eduction', path: '/education' },
+  { name: 'Education', path: '/education' },
 ];
 
 const steps = [
@@ -49,7 +49,7 @@ const Sidebar = ({ user }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <span>View Résumé</span>
+          <span>View Resume</span>
         </ViewResumeLink>
       </SideNavItems>
     </StyledSideNav>

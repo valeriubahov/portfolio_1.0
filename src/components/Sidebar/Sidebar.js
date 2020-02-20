@@ -1,13 +1,15 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
 import { SideNavItems, SideNavLink } from 'carbon-components-react/lib/components/UIShell';
 import { StyledSideNav, Image, ViewResumeLink, CenterDiv } from './styles';
 import Typical from 'react-typical';
+import {Link} from 'react-scroll';
+
 
 const items = [
-  { name: 'About me', path: '/' },
-  { name: 'Experience', path: '/work' },
-  { name: 'Education', path: '/education' },
+  { name: 'Home', path: 'home' },
+  { name: 'Experience', path: 'work' },
+  { name: 'Education', path: 'education' },
+  { name: 'About Me', path: 'about' },
 ];
 
 const steps = [
@@ -19,27 +21,25 @@ const steps = [
 
 
 const Sidebar = ({ user }) => {
-  const location = useLocation();
-
   return (
     <StyledSideNav isFixedNav expanded isChildOfHeader={false} aria-label="Side navigation">
       <SideNavItems>
         <Image src={user.basics.picture} />
-        <CenterDiv>
+        {/* <CenterDiv>
           <Typical
             steps={steps}
             loop={Infinity}
             wrapper="b"
           />
-        </CenterDiv>
+        </CenterDiv> */}
         {items.map(i => (
           <SideNavLink
-            isActive={
-              location.pathname === '/home' && i.path === '/home' ? true : location.pathname === i.path
-            }
             element={Link}
             to={i.path}
             key={i.name}
+            spy={true}
+            smooth={true}
+            duration={500}
           >
             {i.name}
           </SideNavLink>

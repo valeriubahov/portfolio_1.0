@@ -1,18 +1,16 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import { Paragraph, AboutMe, Screwc, Screwcc, ColorBlock, H1Reverse, H1Alone } from '../../styles';
-import { WorkItem, WorkTitle, JobTitle, Div, Unscrollable } from './styles';
+import { Paragraph, AboutMe, Screwc, Screwcc, WhiteBlock, H1Reverse, H1Alone } from '../../styles';
+import { WorkItem, WorkTitle, JobTitle, Div, Unscrollable, WorkDiv } from './styles';
 
 const Work = ({ user }) => {
   return (
-    <Layout user={user}>
+    <WorkDiv>
       <H1Alone>Experience</H1Alone>
-      <Unscrollable>
         <ul>
           {user.work.map((work, i) => (
             <WorkItem key={i}>
-              <Screwc></Screwc>
-              <ColorBlock>
+              <WhiteBlock>
                 <WorkTitle>{work.position}</WorkTitle>
                 <br></br>
                 <JobTitle>{work.company}</JobTitle> <Paragraph>{work.location}</Paragraph>
@@ -25,14 +23,11 @@ const Work = ({ user }) => {
                 </div>
                 <br></br>
                 <Paragraph>{work.summary}</Paragraph>
-              </ColorBlock>
-              <Screwcc></Screwcc>
-
+              </WhiteBlock>
             </WorkItem>
           ))}
         </ul>
-      </Unscrollable>
-    </Layout>
+    </WorkDiv>
   );
 };
 

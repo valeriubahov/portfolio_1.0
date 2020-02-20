@@ -42,7 +42,6 @@ export const Div = styled.div`
 position:relative;
 display: inline-block;
 white-space: nowrap;
-background: #222629;
 color: white;
 margin-top: 0rem;
 padding-bottom: 1rem;
@@ -54,12 +53,23 @@ border-radius: 16px 16px 16px 16px;
 export const H1Reverse = styled.h1`
 text-align:center;
 font-size:70px;
-color: #86C232;
+color: #5918df;
 font-family:'wire one', serif;
 font-weight:normal;
 `;
 
 export const P = styled.p`
+`;
+
+export const CenterDiv = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+color: #5918df;
+font-size: 15px;
+word-spacing: 2px;
+font-weight: 400;
+font-weight: bold;
 `;
 
 

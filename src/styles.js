@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { blue } from '@carbon/colors';
-import { gray } from '@carbon/colors';
 
 export const SectionTitle = styled.h3`
 position:relative;
@@ -20,6 +19,7 @@ white-space: pre-line;
 `;
 
 export const AboutMe = styled.div`
+background-image: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
 margin: auto;
 height: 20%;
 width: 100%;
@@ -44,7 +44,6 @@ export const ColorBlock = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  background:#474B4F;
   color:#fff;
   text-align: center;
   color: white;
@@ -56,7 +55,7 @@ export const ColorBlock = styled.div`
   text-transform: none;
   margin-top: 0rem;
   padding-bottom: 1rem;
-  padding-top: 1rem;
+  padding-top: 5rem;
   padding-left:0.5rem;
   `;
 
@@ -65,7 +64,6 @@ export const ColorBlock = styled.div`
   flex-direction: column;
   margin: auto;
   text-align: center;
-  background: #222629;
   color: white;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 25px;
@@ -82,8 +80,8 @@ export const ColorBlock = styled.div`
   export const H1 = styled.h1`
   position: relative;
   text-align: center;
-  font-size: 70px;
-  color: #86C232;
+  font-size: 55px;
+  color: #988e9f;
   font-family: 'wire one',serif;
   font-weight: normal;
   `;
@@ -93,8 +91,8 @@ export const ColorBlock = styled.div`
   flex-direction: column;
   margin: auto;
   text-align: center;
-  font-size: 60px;
-  color: #86C232;
+  font-size: 55px;
+  color: #988e9f;
   font-family: 'wire one',serif;
   font-weight: normal;
   `;
@@ -103,8 +101,8 @@ export const ColorBlock = styled.div`
   export const H1Reverse = styled.h1`
   position: relative;
   text-align: center;
-  font-size: 70px;
-  color: white;
+  font-size: 55px;
+  color: #988e9f;
   font-family: 'wire one',serif;
   font-weight: normal;
   `;
@@ -114,7 +112,7 @@ export const Screwcc = styled.div`
   height:100px;
   position:relative;
   left:0px;
-  background: linear-gradient(to right bottom,#474B4F 49%, #222629 50%),linear-gradient(-50deg,#222629 16px,#000 0);
+  background: linear-gradient(to right bottom,#14121c  49%, #14121c 50%),linear-gradient(-50deg,#14121c 16px,#000 0);
   `;
 
 
@@ -123,5 +121,5 @@ export const Screwc = styled.div`
   height:100px;
   position:relative;
   left:0px;
-  background: linear-gradient(to left bottom,#222629 49%,#474B4F 50%);
+  background: linear-gradient(to left bottom,#14121c 49%,#14121c  50%);
   `;

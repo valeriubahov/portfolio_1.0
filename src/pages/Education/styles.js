@@ -10,7 +10,6 @@ font-weight: 400;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-margin-top: 3rem;
 padding-bottom: 1rem;
 padding-top: 1rem;
 
@@ -29,7 +28,20 @@ export const Degree = styled.p`
 top:15px;
 text-align:center;
 font-size: 30px;
-color: #86C232;
+color: #988e9f;
 font-family:'wire one', serif;
 font-weight:normal;
-`
+`;
+
+export const ExperienceDiv = styled.div`
+background-image: linear-gradient(-180deg,#0e0c16,#1a1527 88%,#1a1527 99%);
+position: relative;
+overflow: hidden;
+height: auto;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+padding-top: 5rem;
+`;

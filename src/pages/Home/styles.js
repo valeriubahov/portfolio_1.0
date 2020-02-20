@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { gray } from '@carbon/colors';
 
 export const ProfileLink = styled.li`
   margin-right: 0.5rem;
@@ -59,3 +58,14 @@ align-items: center;
 justify-content: center;
 `;
 
+export const HomeDiv = styled.div`
+background-image: linear-gradient(-180deg,#0e0c16,#1a1527 88%,#1a1527 99%);
+position: relative;
+overflow: hidden;
+height: auto;
+min-height: 560px;
+width: 100%;
+margin-right: auto;
+margin-left: auto;
+padding-top: 1rem;
+`;

@@ -10,8 +10,6 @@ export const WorkItem = styled.li`
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  margin-top: 3rem;
-  padding-bottom: 1rem;
   padding-top: 1rem;
 `;
 export const Experience = styled.div`
@@ -30,7 +28,6 @@ export const Div = styled.div`
 position:relative;
 display: inline-block;
 white-space: nowrap;
-background: #222629;
 color: white;
 margin-top: 0rem;
 padding-bottom: 1rem;
@@ -49,7 +46,7 @@ font-weight: 400;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-color: #86C232;
+color: #988e9f;
 font-family:'wire one', serif;
 font-weight:normal;
 `;
@@ -74,6 +71,20 @@ font-variant: normal;
 text-transform: none;
 margin-top: 2rem;
 padding-bottom: 1rem;
-padding-top: 1rem;
+
 padding-left:0.5rem;
+`;
+
+export const WorkDiv = styled.div`
+background-image: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
+background-color: #14121c;
+position: relative;
+overflow: hidden;
+height: auto;
+width: 100%;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+padding-top: 5rem;
 `;

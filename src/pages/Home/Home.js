@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
-import { Paragraph, Screwc, Screwcc, ColorBlock, WhiteBlock, H1, H1Reverse } from '../../styles';
-import { ProfileLink, ProgressBar, Scrollable, CenterDiv, Unscrollable } from './styles';
+import { Paragraph, ColorBlock, WhiteBlock, H1, H1Reverse } from '../../styles';
+import { ProfileLink, ProgressBar, Scrollable, CenterDiv, Unscrollable, HomeDiv } from './styles';
 import {
   CircularProgressbar,
   buildStyles
@@ -20,19 +20,13 @@ class Home extends React.Component {
   }
   render() {
     return (
-      <Layout user={this.props.user}>
-        <Screwc></Screwc>
-
-        {/* INTESTAZIONE */}
+      <HomeDiv>
         <ColorBlock>
           <H1>About Me</H1>
           <Unscrollable>
             <Paragraph>{this.props.user.basics.summary}</Paragraph>
           </Unscrollable>
         </ColorBlock>
-        <Screwcc></Screwcc>
-
-        {/* SKILLS */}
         <WhiteBlock>
           <H1Reverse>Skills</H1Reverse>
           <Scrollable>
@@ -50,7 +44,7 @@ class Home extends React.Component {
                       <CircularProgressbar
                         value={value}
                         text={`${roundedValue}% ${skill.name}`}
-                        styles={buildStyles({ pathTransition: "none", textSize: '11px', pathColor: '#86C232', textColor: '#86C232' })}
+                        styles={buildStyles({ pathTransition: "none", textSize: '11px', pathColor: '#5918df', textColor: '#988e9f' })}
                       />
                     );
                   }}
@@ -59,10 +53,7 @@ class Home extends React.Component {
             ))}
           </Scrollable>
         </WhiteBlock>
-        <Screwc></Screwc>
-
-        {/* Social */}
-        <ColorBlock>
+        <WhiteBlock>
           <H1>Profiles</H1>
           <CenterDiv>
             <Unscrollable>
@@ -76,10 +67,8 @@ class Home extends React.Component {
               </ul>
             </Unscrollable>
           </CenterDiv>
-        </ColorBlock>
-
-        <Screwcc></Screwcc>
-      </Layout>
+        </WhiteBlock>
+      </HomeDiv>
     );
   }
 }

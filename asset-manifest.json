@@ -1,26 +1,30 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.cd6358a9.chunk.css",
-    "main.js": "/portfolio/static/js/main.526b119c.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.526b119c.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.9ac7e17f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9ac7e17f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.44087e9b.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.44087e9b.js.map",
     "static/css/2.09ae8418.chunk.css": "/portfolio/static/css/2.09ae8418.chunk.css",
-    "static/js/2.894274fb.chunk.js": "/portfolio/static/js/2.894274fb.chunk.js",
-    "static/js/2.894274fb.chunk.js.map": "/portfolio/static/js/2.894274fb.chunk.js.map",
+    "static/js/2.92ae14a0.chunk.js": "/portfolio/static/js/2.92ae14a0.chunk.js",
+    "static/js/2.92ae14a0.chunk.js.map": "/portfolio/static/js/2.92ae14a0.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.8a0bbba584ed4e1a2aed2aba6efba759.js": "/portfolio/precache-manifest.8a0bbba584ed4e1a2aed2aba6efba759.js",
+    "precache-manifest.a90b42a1b645d678a11c99a04e99d061.js": "/portfolio/precache-manifest.a90b42a1b645d678a11c99a04e99d061.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.09ae8418.chunk.css.map": "/portfolio/static/css/2.09ae8418.chunk.css.map",
     "static/css/main.cd6358a9.chunk.css.map": "/portfolio/static/css/main.cd6358a9.chunk.css.map",
-    "static/js/2.894274fb.chunk.js.LICENSE.txt": "/portfolio/static/js/2.894274fb.chunk.js.LICENSE.txt",
-    "static/media/GreenLantern.jpg": "/portfolio/static/media/GreenLantern.f62df154.jpg"
+    "static/js/2.92ae14a0.chunk.js.LICENSE.txt": "/portfolio/static/js/2.92ae14a0.chunk.js.LICENSE.txt",
+    "static/media/BatDev.jpg": "/portfolio/static/media/BatDev.982c7e4d.jpg",
+    "static/media/GreenLantern.jpg": "/portfolio/static/media/GreenLantern.f62df154.jpg",
+    "static/media/JSDev.jpg": "/portfolio/static/media/JSDev.46a098a8.jpg",
+    "static/media/SpiderWeb.jpg": "/portfolio/static/media/SpiderWeb.c6b03e8d.jpg",
+    "static/media/TecSup.jpg": "/portfolio/static/media/TecSup.fd9090d4.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.44087e9b.js",
     "static/css/2.09ae8418.chunk.css",
-    "static/js/2.894274fb.chunk.js",
+    "static/js/2.92ae14a0.chunk.js",
     "static/css/main.cd6358a9.chunk.css",
-    "static/js/main.526b119c.chunk.js"
+    "static/js/main.9ac7e17f.chunk.js"
   ]
 }

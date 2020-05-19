@@ -40,7 +40,45 @@ export const Pill = styled.span`
   font-weight: bold;
 `;
 
-export const ColorBlock = styled.div`
+export const ColorBlockStart = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-image: linear-gradient(-180deg,#0e0c16,#1a1527 88%,#1a1527 99%);
+  color:#fff;
+  text-align: center;
+  color: white;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-right:0.5rem;
+  `;
+
+  export const ColorBlockEnd = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-image:linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
+  color:#fff;
+  text-align: center;
+  color: white;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-left:0.5rem;
+  `;
+
+  export const ColorBlock = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -53,9 +91,8 @@ export const ColorBlock = styled.div`
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  margin-top: 0rem;
   padding-bottom: 1rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-left:0.5rem;
   `;
 
@@ -64,6 +101,25 @@ export const ColorBlock = styled.div`
   flex-direction: column;
   margin: auto;
   text-align: center;
+  color: white;
+  background-color: #1a1527;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-left:0.5rem;
+  `;
+
+  export const WhiteBlockExp = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  background-image: linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(46,204,64,1) 100%);
   color: white;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 25px;
@@ -102,7 +158,7 @@ export const ColorBlock = styled.div`
   position: relative;
   text-align: center;
   font-size: 55px;
-  color: #988e9f;
+  color: #988e9f; 
   font-family: 'wire one',serif;
   font-weight: normal;
   `;
@@ -123,3 +179,13 @@ export const Screwc = styled.div`
   left:0px;
   background: linear-gradient(to left bottom,#14121c 49%,#14121c  50%);
   `;
+
+export const Timeline = styled.div`
+width: 1px;
+height: 100%;
+left: -10px;
+top: 13px;
+z-index: 9;
+position: absolute;
+background-color: #5918df;
+`;

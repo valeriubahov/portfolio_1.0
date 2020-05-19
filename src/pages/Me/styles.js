@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const About = styled.div`
-background-image: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
 position: relative;
 overflow: hidden;
+background-color: #14121c;
 height: auto;
 min-height: 560px;
 width: 100%;
@@ -68,7 +68,7 @@ line-height: 1.6;
 
 export const Code1 = styled.div`
 & > :after {
-content: attr(data-line-nr);
+content: "";
     position: absolute;
     left: -60px;
     color: #3b3553;

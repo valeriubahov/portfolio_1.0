@@ -5,7 +5,7 @@ $carbon--theme: $carbon--theme--g100;
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 a {
-  color: $text-04;
+  color: white;
 }
 
 .bx--side-nav__navigation {
@@ -15,13 +15,13 @@ a {
 a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
   
-  background-color: #86C232;
+  background-color: gray;
   color: $text-04;
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link:hover {
-  background-color: #86C232;
+  background-color: gray;
   color: $text-04;
 }
 
@@ -29,7 +29,7 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link:hover
   > span {
-  color: $text-04;
+  color: white;
 }
 
 .bx--side-nav__link {
@@ -44,12 +44,13 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
   overflow-y: auto;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .bx--content {
   background: #5918df;
   transform: translate3d(0, 0, 0);
-  padding: 1px;
+  padding: 0px;
   will-change: margin-left;
 }
 

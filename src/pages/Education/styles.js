@@ -1,5 +1,4 @@
-import styled from 'styled-components'
-import { gray } from '@carbon/colors';
+import styled from 'styled-components';
 
 export const EducationItem = styled.li`
 color: white;
@@ -34,7 +33,7 @@ font-weight:normal;
 `;
 
 export const ExperienceDiv = styled.div`
-background-image: linear-gradient(-180deg,#0e0c16,#1a1527 88%,#1a1527 99%);
+background-image: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
 position: relative;
 overflow: hidden;
 height: auto;
@@ -44,4 +43,22 @@ padding-left: 15px;
 margin-right: auto;
 margin-left: auto;
 padding-top: 5rem;
+`;
+
+
+export const WhiteBlockEdu = styled.div`
+display: flex;
+flex-direction: column;
+margin: auto;
+text-align: center;
+color: white;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 25px;
+font-weight: 400;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+padding-bottom: 1rem;
+padding-top: 3rem;
+padding-left:0.5rem;
 `;

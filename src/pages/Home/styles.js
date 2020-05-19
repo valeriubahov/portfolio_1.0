@@ -27,9 +27,8 @@ font-weight: 400;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-margin-top: 2rem;
 padding-bottom: 1rem;
-padding-top: 1rem;
+padding-top: 3rem;
 padding-left:0.5rem;
 `;
 
@@ -46,9 +45,8 @@ font-weight: 400;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-margin-top: 2rem;
 padding-bottom: 1rem;
-padding-top: 1rem;
+padding-top: 3rem;
 padding-left:0.5rem;
 `;
 

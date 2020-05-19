@@ -1,6 +1,5 @@
 import React from 'react';
-import Layout from '../../components/Layout';
-import { Paragraph, ColorBlock, WhiteBlock, H1, H1Reverse } from '../../styles';
+import { Paragraph, ColorBlockStart, ColorBlockEnd, WhiteBlock, H1, H1Reverse, Timeline } from '../../styles';
 import { ProfileLink, ProgressBar, Scrollable, CenterDiv, Unscrollable, HomeDiv } from './styles';
 import {
   CircularProgressbar,
@@ -21,12 +20,12 @@ class Home extends React.Component {
   render() {
     return (
       <HomeDiv>
-        <ColorBlock>
+        <ColorBlockStart>
           <H1>About Me</H1>
           <Unscrollable>
             <Paragraph>{this.props.user.basics.summary}</Paragraph>
           </Unscrollable>
-        </ColorBlock>
+        </ColorBlockStart>
         <WhiteBlock>
           <H1Reverse>Skills</H1Reverse>
           <Scrollable>
@@ -44,7 +43,7 @@ class Home extends React.Component {
                       <CircularProgressbar
                         value={value}
                         text={`${roundedValue}% ${skill.name}`}
-                        styles={buildStyles({ pathTransition: "none", textSize: '11px', pathColor: '#5918df', textColor: '#988e9f' })}
+                        styles={buildStyles({ pathTransition: "none", textSize: '11px', pathColor: 'green', textColor: 'white' })}
                       />
                     );
                   }}
@@ -53,7 +52,7 @@ class Home extends React.Component {
             ))}
           </Scrollable>
         </WhiteBlock>
-        <WhiteBlock>
+        <ColorBlockEnd>
           <H1>Profiles</H1>
           <CenterDiv>
             <Unscrollable>
@@ -67,7 +66,8 @@ class Home extends React.Component {
               </ul>
             </Unscrollable>
           </CenterDiv>
-        </WhiteBlock>
+        </ColorBlockEnd>
+        
       </HomeDiv>
     );
   }

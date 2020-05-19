@@ -5,9 +5,9 @@ import { Container, Spacer, NavWrapper, NavButton, NavLink, NavResume } from './
 
 const items = [
   { name: 'Home', path: 'home', icon: Home32 },
+  { name: 'About Me', path: 'about', icon: User32 },
   { name: 'Experience', path: 'work', icon: Portfolio32 },
   { name: 'Education', path: 'education', icon: Education32 },
-  { name: 'About Me', path: 'about', icon: User32 },
 ];
 const MobileNav = () => {
   return (

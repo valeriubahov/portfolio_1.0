@@ -69,6 +69,11 @@ export const ColorBlockStart = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
+<<<<<<< HEAD
+=======
+  background-image: linear-gradient(-180deg,#0e0c16,#1a1527 88%,#1a1527 99%);
+  color:#fff;
+>>>>>>> 115a3526ccf8c91e288d646f99bcca04c4501a8f
   text-align: center;
   color: black;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -86,8 +91,15 @@ export const ColorBlockStart = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
+<<<<<<< HEAD
   text-align: center;
   color: black;
+=======
+  background-image:linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
+  color:#fff;
+  text-align: center;
+  color: white;
+>>>>>>> 115a3526ccf8c91e288d646f99bcca04c4501a8f
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 25px;
   font-weight: 400;
@@ -103,8 +115,14 @@ export const ColorBlockStart = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
+<<<<<<< HEAD
   text-align: center;
   color: black;
+=======
+  color:#fff;
+  text-align: center;
+  color: white;
+>>>>>>> 115a3526ccf8c91e288d646f99bcca04c4501a8f
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 25px;
   font-weight: 400;
@@ -122,6 +140,25 @@ export const ColorBlockStart = styled.div`
   margin: auto;
   text-align: center;
   color: black;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-left:0.5rem;
+  `;
+
+  export const WhiteBlockExp = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  background-image: linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(46,204,64,1) 100%);
+  color: white;
+  background-color: #1a1527;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 25px;
   font-weight: 400;
@@ -196,6 +233,7 @@ export const ColorBlockStart = styled.div`
   export const H1Reverse = styled.h1`
   position: relative;
   text-align: center;
+<<<<<<< HEAD
   font-size: 1rem;
     font-weight: 400;
     letter-spacing: 0;
@@ -210,6 +248,12 @@ export const ColorBlockStart = styled.div`
     text-transform: uppercase;
     flex: 0 0 auto;
     margin: 0;
+=======
+  font-size: 55px;
+  color: #988e9f; 
+  font-family: 'wire one',serif;
+  font-weight: normal;
+>>>>>>> 115a3526ccf8c91e288d646f99bcca04c4501a8f
   `;
 
 export const Screwcc = styled.div`

@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 
+import Background from '../../images/a5d79c8.webp';
+
 export const HeaderContainer = styled.div`
   display: ${({ isHome }) => (isHome ? 'none' : 'flex')};
   position:relative;
@@ -112,8 +114,8 @@ display: inline-block;
 vertical-align: middle;
 line-height: normal;
 white-space: pre-line;
-color: black;
-background-color: black;
+color: white;
+background-image: url(${Background});
 background-repeat: no-repeat;
 background-size: contain;
 height: 100vh;

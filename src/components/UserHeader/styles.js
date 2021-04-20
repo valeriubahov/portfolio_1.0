@@ -1,13 +1,32 @@
 import styled from 'styled-components';
-import { gray } from '@carbon/colors';
 
 export const HeaderContainer = styled.div`
   display: ${({ isHome }) => (isHome ? 'none' : 'flex')};
-  align-items: center;
-  justify-content: center;
+  position:relative;
+  flex-direction: column;
+  color: #1a1d1e;
+  background-color: #1a1d1e;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  max-width: 83%;
+  @media (max-width: 640px) {
+    max-width: 100%;
+  }
+margin-left: auto;
+margin-right: auto;
+position: relative;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+align-items: center;
+justify-content: center;
+
   @media (max-width: 640px) {
     display: ${({ isHome }) => (isHome ? 'none' : 'flex')};
-    flex-direction: column;
+    background-size: cover;
   }
 `;
 
@@ -53,23 +72,64 @@ border-radius: 16px 16px 16px 16px;
 export const H1Reverse = styled.h1`
 text-align:center;
 font-size:70px;
-color: #5918df;
+font-weight: 700;
+color: #08b7dd;
 font-family:'wire one', serif;
 font-weight:normal;
 `;
 
+export const H1 = styled.h1`
+text-align:center;
+font-size:50px;
+font-weight: 700;
+color: white;
+font-family:'wire one', serif;
+font-weight:normal;
+`;
+
+export const Name = styled.strong`
+color: #5918df;
+`;
+
 export const P = styled.p`
+color:white;
+font-weight:700;
 `;
 
 export const CenterDiv = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-color: #5918df;
-font-size: 15px;
+color: #08b7dd;
+font-size: 30px;
 word-spacing: 2px;
 font-weight: 400;
 font-weight: bold;
 `;
 
+export const AboutMeImg = styled.div`
+display: inline-block;
+vertical-align: middle;
+line-height: normal;
+white-space: pre-line;
+color: black;
+background-color: black;
+background-repeat: no-repeat;
+background-size: contain;
+height: 100vh;
+width: 100%;
+background-position: center;
+@media (max-width: 640px) {
+  height: 50vh;
+}
+`;
+
+
+export const AboutMe = styled.div`
+margin: auto;
+width: 100%;
+line-height: 30px;
+vertical-align: middle;
+text-align: center;
+`;
 

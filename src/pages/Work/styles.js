@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 
+
 export const WorkItem = styled.li`
   color: white;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
@@ -10,7 +11,6 @@ export const WorkItem = styled.li`
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  padding-top: 1rem;
 `;
 export const Experience = styled.div`
 position:relative;
@@ -39,14 +39,13 @@ border-radius: 16px 16px 16px 16px;
 
 export const WorkTitle = styled.h4`
 position: relative;
-top:15px;
 text-align:center;
 font-size: 35px;
 font-weight: 400;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-color: #988e9f;
+color: black;
 font-family:'wire one', serif;
 font-weight:normal;
 `;
@@ -54,6 +53,8 @@ font-weight:normal;
 export const JobTitle = styled.p`
   font-weight: bold;
   display: inline-block;
+  color:black;
+
 `;
 
 
@@ -69,22 +70,45 @@ font-weight: 400;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-margin-top: 2rem;
-padding-bottom: 1rem;
 
+padding-bottom: 1rem;
 padding-left:0.5rem;
 `;
 
+
 export const WorkDiv = styled.div`
-background-image: linear-gradient(-180deg,#1a1527,#0e0c16 88%,#0e0c16 99%);
-background-color: #14121c;
-position: relative;
-overflow: hidden;
-height: auto;
-width: 100%;
-padding-right: 15px;
-padding-left: 15px;
-margin-right: auto;
+position:relative;
+background-image: linear-gradient(to bottom right,#08b7dd,#1773dd);
+max-width: 83%;
+@media (max-width: 640px) {
+  max-width: 100%;
+}
 margin-left: auto;
-padding-top: 5rem;
+margin-right: auto;
+position: relative;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+height: 100%;
+padding-top:4.5rem;
+padding-bottom:4.5rem;
+align-items: center;
+justify-content: center;
+`;
+
+export const WhiteBlock = styled.div`
+display: flex;
+flex-direction: column;
+margin: auto;
+text-align: center;
+color: white;
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+font-size: 25px;
+font-weight: 400;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+padding-bottom: 1rem;
+padding-top: 3rem;
+padding-left:0.5rem;
 `;

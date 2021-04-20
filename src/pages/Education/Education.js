@@ -1,7 +1,6 @@
 import React from 'react';
-import Layout from '../../components/Layout';
-import { SectionTitle, Paragraph, AboutMe, H1Reverse, WhiteBlock, Screwc, Screwcc, H1Alone } from '../../styles';
-import { EducationItem, Institution, Degree, ExperienceDiv } from './styles';
+import { Paragraph1, H1Alone } from '../../styles';
+import { EducationItem, Institution, Degree, ExperienceDiv, WhiteBlockEdu } from './styles';
 
 
 class Education extends React.Component {
@@ -11,13 +10,14 @@ class Education extends React.Component {
   }
   render() {
     return (
+    
       <ExperienceDiv>
-       <H1Alone>Education</H1Alone>
+        <H1Alone>Education</H1Alone>
         <ul>
           {this.props.user.education.map((education, i) => (
             <EducationItem key={i}>
               {/* <Screwc></Screwc> */}
-              <WhiteBlock>
+              <WhiteBlockEdu>
                 <Institution>{education.position}</Institution>
                 <div>
                   <Degree>
@@ -25,16 +25,17 @@ class Education extends React.Component {
                   </Degree>{' '}
                   <div>
                     {education.end.year !== '' && (
-                      <Paragraph>From {education.start.year} to {education.end.year}</Paragraph>
+                      <Paragraph1>From {education.start.year} to {education.end.year}</Paragraph1>
                     )}
                   </div>
                 </div>
-                <Paragraph>{education.description.replace('\n\n', '\n')}</Paragraph>
-              </WhiteBlock>
+                <Paragraph1>{education.description.replace('\n\n', '\n')}</Paragraph1>
+              </WhiteBlockEdu>
               {/* <Screwcc></Screwcc> */}
             </EducationItem>
           ))}
         </ul>
+       
       </ExperienceDiv>
     )
   }

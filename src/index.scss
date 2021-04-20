@@ -5,23 +5,26 @@ $carbon--theme: $carbon--theme--g100;
 @import 'carbon-components/scss/globals/scss/styles.scss';
 
 a {
-  color: $text-04;
+  color: white;
 }
 
 .bx--side-nav__navigation {
   background-image: linear-gradient(-180deg,#0e0c16,#1a1527 88%,#1a1527 99%);
+  display: flex;
+  flex: 1 1 auto;
+  flex-flow: row wrap;
 }
 
 a.bx--side-nav__link--current,
 a.bx--side-nav__link--current > span.bx--side-nav__link-text {
   
-  background-color: #86C232;
+  background-color: gray;
   color: $text-04;
 }
 
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link:hover {
-  background-color: #86C232;
+  background-color: gray;
   color: $text-04;
 }
 
@@ -29,7 +32,7 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
 .bx--side-nav__item:not(.bx--side-nav__item--active)
   > .bx--side-nav__link:hover
   > span {
-  color: $text-04;
+  color: white;
 }
 
 .bx--side-nav__link {
@@ -37,6 +40,11 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
   align-items: center;
   justify-content: center;
   transition: background-color 250ms ease;
+  position: relative;
+  height: 72px;
+  margin: 0;
+  
+
 }
 
 .bx--side-nav__items {
@@ -46,10 +54,21 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
   justify-content: center;
 }
 
+.bx--side-nav__item {
+  width: auto;
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  margin: 0;
+  display: flex;
+}
+
 .bx--content {
-  background: #5918df;
+  background-color: #1a1d1e;
+  background-image: url(//d24yopoqm7oqlq.cloudfront.net/statics/2020-05-28/images/pattern.png);
   transform: translate3d(0, 0, 0);
-  padding: 1px;
+  padding: 0px;
+  margin-left: 0rem !important;
   will-change: margin-left;
 }
 
@@ -59,3 +78,11 @@ a.bx--side-nav__link > .bx--side-nav__link-text,
   border-style: solid;
   border-color: transparent;
 }
+
+.bx--side-nav {
+  position: relative;
+  margin-left: 0rem !important;
+  width: 100%;
+  max-width: none;
+}
+

@@ -13,9 +13,34 @@ color: #86C232;
 
 export const Paragraph = styled.p`
 display: inline-block;
+color:black;
 vertical-align: middle;
-line-height: normal;
 white-space: pre-line;
+letter-spacing: 0;
+text-decoration: none;
+text-indent: 0;
+text-transform: none;
+font-family: Sharp Sans No2,Arial,sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 1rem;
+line-height: 1.4;
+`;
+
+export const Paragraph1 = styled.p`
+display: inline-block;
+color:#08b7dd;
+vertical-align: middle;
+white-space: pre-line;
+letter-spacing: 0;
+text-decoration: none;
+text-indent: 0;
+text-transform: none;
+font-family: Sharp Sans No2,Arial,sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 1rem;
+line-height: 1.4;
 `;
 
 export const AboutMe = styled.div`
@@ -40,22 +65,54 @@ export const Pill = styled.span`
   font-weight: bold;
 `;
 
-export const ColorBlock = styled.div`
+export const ColorBlockStart = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
-  color:#fff;
   text-align: center;
-  color: white;
+  color: black;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 25px;
   font-weight: 400;
   font-style: normal;
   font-variant: normal;
   text-transform: none;
-  margin-top: 0rem;
   padding-bottom: 1rem;
-  padding-top: 5rem;
+  padding-top: 3rem;
+  padding-right:0.5rem;
+  `;
+
+  export const ColorBlockEnd = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-left:0.5rem;
+  `;
+
+  export const ColorBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  color: black;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
   padding-left:0.5rem;
   `;
 
@@ -64,6 +121,24 @@ export const ColorBlock = styled.div`
   flex-direction: column;
   margin: auto;
   text-align: center;
+  color: black;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-left:0.5rem;
+  `;
+
+  export const WhiteBlockExp = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  background-image: linear-gradient(180deg,rgba(255,255,255,1) 0%,rgba(46,204,64,1) 100%);
   color: white;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-size: 25px;
@@ -79,32 +154,62 @@ export const ColorBlock = styled.div`
 
   export const H1 = styled.h1`
   position: relative;
+  color:black;
   text-align: center;
-  font-size: 55px;
-  color: #988e9f;
-  font-family: 'wire one',serif;
-  font-weight: normal;
+  font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    font-family: Sharp Sans No2,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    margin: 0;
   `;
 
   export const H1Alone = styled.h1`
-  display: flex;
-  flex-direction: column;
-  margin: auto;
+  position: relative;
+  color:white;
   text-align: center;
-  font-size: 55px;
-  color: #988e9f;
-  font-family: 'wire one',serif;
-  font-weight: normal;
+  font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    font-family: Sharp Sans No2,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    margin: 0;
   `;
 
 
   export const H1Reverse = styled.h1`
   position: relative;
   text-align: center;
-  font-size: 55px;
-  color: #988e9f;
-  font-family: 'wire one',serif;
-  font-weight: normal;
+  font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    font-family: Sharp Sans No2,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    margin: 0;
   `;
 
 export const Screwcc = styled.div`
@@ -123,3 +228,13 @@ export const Screwc = styled.div`
   left:0px;
   background: linear-gradient(to left bottom,#14121c 49%,#14121c  50%);
   `;
+
+export const Timeline = styled.div`
+width: 1px;
+height: 100%;
+left: -10px;
+top: 13px;
+z-index: 9;
+position: absolute;
+background-color: #5918df;
+`;

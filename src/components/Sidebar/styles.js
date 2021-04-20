@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { SideNav } from 'carbon-components-react/lib/components/UIShell'
 
 export const StyledSideNav = styled(SideNav)`
-display: inline-block;
+overflow: hidden;
   @media (max-width: 640px) {
     display: none;
   }
@@ -17,18 +17,52 @@ display: inline-block;
 
 export const CenterDiv = styled.div`
 display: flex;
-align-items: center;
 justify-content: center;
-color: #86C232;
-font-size: 15px;
-word-spacing: 2px;
-font-weight: 400;
-font-weight: bold;
+position: fixed;
+width: 100vw;
+top: 0;
+left: 0;
+z-index: 1;
 `;
 
+export const Header = styled.div`
+@media (max-width: 640px) {
+  display: none;
+}
+position: fixed;
+background-color: black;
+width: 100%;
+max-width: 83%;
+@media (max-width: 640px) {
+  max-width: 100%;
+}
+z-index: 1;
+margin-left: auto;
+margin-right: auto;
+flex-direction: column;
+overflow: hidden;
+align-items: center;
+justify-content: center;
+left: 0;
+right: 0;
+`;
+
+export const Menu = styled.ul`
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+`;
 
 export const ViewResumeLink = styled.a`
-  
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: linear-gradient(to bottom right,#08b7dd,#1773dd);
   outline: 2px solid transparent;
   outline-offset: -2px;
   font-size: 0.875rem;
@@ -40,11 +74,11 @@ export const ViewResumeLink = styled.a`
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  min-height: 2rem;
+  min-height: 4.5rem;
   padding: 0 1rem;
   transition: background-color 250ms ease;
   &:hover {
-    background-color: #86C232;
+    background-image: linear-gradient(to bottom right,#1773dd,#1773dd);
   }
   svg {
     fill: white;

@@ -1,37 +1,21 @@
 import React from 'react';
 import { SideNavItems, SideNavLink } from 'carbon-components-react/lib/components/UIShell';
-import { StyledSideNav, Image, ViewResumeLink, CenterDiv } from './styles';
-import Typical from 'react-typical';
-import {Link} from 'react-scroll';
+import { StyledSideNav, Image, ViewResumeLink,Header,Menu } from './styles';
+import { Link } from 'react-scroll';
 
 
 const items = [
   { name: 'Home', path: 'home' },
+  { name: 'About Me', path: 'about' },
   { name: 'Experience', path: 'work' },
   { name: 'Education', path: 'education' },
-  { name: 'About Me', path: 'about' },
 ];
-
-const steps = [
-  "Frontend Developer", 1000,
-  "React Developer", 1000,
-  "Backend Developer", 1000,
-  "Full-stack Developer", 1000
-];
-
 
 const Sidebar = ({ user }) => {
   return (
-    <StyledSideNav isFixedNav expanded isChildOfHeader={false} aria-label="Side navigation">
-      <SideNavItems>
-        <Image src={user.basics.picture} />
-        {/* <CenterDiv>
-          <Typical
-            steps={steps}
-            loop={Infinity}
-            wrapper="b"
-          />
-        </CenterDiv> */}
+    
+    <Header>
+      <Menu>
         {items.map(i => (
           <SideNavLink
             element={Link}
@@ -51,8 +35,8 @@ const Sidebar = ({ user }) => {
         >
           <span>View Resume</span>
         </ViewResumeLink>
-      </SideNavItems>
-    </StyledSideNav>
+      </Menu>
+    </Header>
   );
 };
 

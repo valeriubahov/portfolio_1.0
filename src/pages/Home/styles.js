@@ -27,9 +27,8 @@ font-weight: 400;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-margin-top: 2rem;
 padding-bottom: 1rem;
-padding-top: 1rem;
+padding-top: 3rem;
 padding-left:0.5rem;
 `;
 
@@ -46,9 +45,8 @@ font-weight: 400;
 font-style: normal;
 font-variant: normal;
 text-transform: none;
-margin-top: 2rem;
 padding-bottom: 1rem;
-padding-top: 1rem;
+padding-top: 3rem;
 padding-left:0.5rem;
 `;
 
@@ -59,7 +57,7 @@ justify-content: center;
 `;
 
 export const HomeDiv = styled.div`
-background-image: linear-gradient(-180deg,#0e0c16,#1a1527 88%,#1a1527 99%);
+background-image: linear-gradient(to bottom right,#08b7dd,#1773dd);
 position: relative;
 overflow: hidden;
 height: auto;
@@ -67,5 +65,15 @@ min-height: 560px;
 width: 100%;
 margin-right: auto;
 margin-left: auto;
-padding-top: 1rem;
+padding-top: 4.5rem;
+max-width: 83%;
+@media (max-width: 640px) {
+  max-width: 100%;
+}
+margin-left: auto;
+margin-right: auto;
+position: relative;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `;

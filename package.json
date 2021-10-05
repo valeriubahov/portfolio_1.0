@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://valeriubahov.github.io/portfolio",
+  "homepage": "https://react-test-app-for-me.herokuapp.com/",
   "dependencies": {
     "3d-react-carousal": "^4.0.2",
     "@carbon/icons-react": "^10.8.2",

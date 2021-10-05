@@ -1,18 +1,12 @@
 import styled from 'styled-components';
 
-import Background from '../../images/a5d79c8.webp';
 
 export const HeaderContainer = styled.div`
   display: ${({ isHome }) => (isHome ? 'none' : 'flex')};
   position:relative;
   flex-direction: column;
-  color: #1a1d1e;
-  background-color: #1a1d1e;
-  background-repeat: no-repeat;
+  background-color: white;
   background-size: cover;
-  height: 100vh;
-  width: 100%;
-  background-position: center;
   max-width: 83%;
   @media (max-width: 640px) {
     max-width: 100%;
@@ -29,6 +23,7 @@ justify-content: center;
   @media (max-width: 640px) {
     display: ${({ isHome }) => (isHome ? 'none' : 'flex')};
     background-size: cover;
+    padding-top: 3rem;
   }
 `;
 
@@ -84,9 +79,11 @@ export const H1 = styled.h1`
 text-align:center;
 font-size:50px;
 font-weight: 700;
-color: white;
+color: black;
 font-family:'wire one', serif;
 font-weight:normal;
+padding-top:1rem;
+padding-bottom:1rem;
 `;
 
 export const Name = styled.strong`
@@ -94,7 +91,7 @@ color: #5918df;
 `;
 
 export const P = styled.p`
-color:white;
+color:black;
 font-weight:700;
 `;
 
@@ -107,6 +104,7 @@ font-size: 30px;
 word-spacing: 2px;
 font-weight: 400;
 font-weight: bold;
+margin-top: 2rem;
 `;
 
 export const AboutMeImg = styled.div`
@@ -115,7 +113,6 @@ vertical-align: middle;
 line-height: normal;
 white-space: pre-line;
 color: white;
-background-image: url(${Background});
 background-repeat: no-repeat;
 background-size: contain;
 height: 100vh;
@@ -128,10 +125,11 @@ background-position: center;
 
 
 export const AboutMe = styled.div`
-margin: auto;
-width: 100%;
+
+width: 60%;
 line-height: 30px;
-vertical-align: middle;
+vertical-align: top;
 text-align: center;
 `;
+
 

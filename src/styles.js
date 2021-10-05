@@ -13,17 +13,17 @@ color: #86C232;
 
 export const Paragraph = styled.p`
 display: inline-block;
-color:black;
+color:#FFF;
 vertical-align: middle;
 white-space: pre-line;
 letter-spacing: 0;
 text-decoration: none;
 text-indent: 0;
 text-transform: none;
-font-family: Sharp Sans No2,Arial,sans-serif;
-font-weight: 700;
+font-family: proxima-nova,sans-serif;
+font-weight: 400;
 font-style: normal;
-font-size: 1rem;
+font-size: 1.125rem;
 line-height: 1.4;
 `;
 
@@ -78,11 +78,13 @@ export const ColorBlockStart = styled.div`
   font-variant: normal;
   text-transform: none;
   padding-bottom: 1rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   padding-right:0.5rem;
+  background-color:#343741;
+  float:left;
   `;
 
-  export const ColorBlockEnd = styled.div`
+export const ColorBlockEnd = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -99,7 +101,7 @@ export const ColorBlockStart = styled.div`
   padding-left:0.5rem;
   `;
 
-  export const ColorBlock = styled.div`
+export const ColorBlock = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -116,7 +118,7 @@ export const ColorBlockStart = styled.div`
   padding-left:0.5rem;
   `;
 
-  export const WhiteBlock = styled.div`
+export const WhiteBlock = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -133,7 +135,7 @@ export const ColorBlockStart = styled.div`
   padding-left:0.5rem;
   `;
 
-  export const WhiteBlockExp = styled.div`
+export const WhiteBlockExp = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -152,9 +154,9 @@ export const ColorBlockStart = styled.div`
   padding-left:0.5rem;
   `;
 
-  export const H1 = styled.h1`
+export const H1 = styled.h1`
   position: relative;
-  color:black;
+  color:#FFF;
   text-align: center;
   font-size: 1rem;
     font-weight: 400;
@@ -163,7 +165,7 @@ export const ColorBlockStart = styled.div`
     text-indent: 0;
     text-transform: none;
     font-family: Sharp Sans No2,Arial,sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-style: normal;
     font-size: 3rem;
     line-height: 1.2;
@@ -172,7 +174,7 @@ export const ColorBlockStart = styled.div`
     margin: 0;
   `;
 
-  export const H1Alone = styled.h1`
+export const H1Alone = styled.h1`
   position: relative;
   color:white;
   text-align: center;
@@ -193,7 +195,7 @@ export const ColorBlockStart = styled.div`
   `;
 
 
-  export const H1Reverse = styled.h1`
+export const H1Reverse = styled.h1`
   position: relative;
   text-align: center;
   font-size: 1rem;
@@ -237,4 +239,23 @@ top: 13px;
 z-index: 9;
 position: absolute;
 background-color: #5918df;
+`;
+
+
+
+export const P1 = styled.p`
+display: inline-block;
+color:#FFF;
+vertical-align: middle;
+white-space: pre-line;
+letter-spacing: 0;
+text-decoration: none;
+text-indent: 0;
+text-transform: none;
+font-family: proxima-nova,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1.125rem;
+line-height: 1.4;
+text-size: 50px;
 `;

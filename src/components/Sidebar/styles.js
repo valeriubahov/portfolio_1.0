@@ -30,7 +30,7 @@ export const Header = styled.div`
   display: none;
 }
 position: fixed;
-background-color: black;
+background-color: #337ab7;
 width: 100%;
 max-width: 83%;
 @media (max-width: 640px) {
@@ -52,9 +52,9 @@ display: flex;
 align-items: center;
 justify-content: center;
 position: relative;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+    // padding-inline-start: 40px;
 
 `;
 
@@ -86,3 +86,4 @@ background-image: linear-gradient(to bottom right,#08b7dd,#1773dd);
     align:center;
   }
 `;
+

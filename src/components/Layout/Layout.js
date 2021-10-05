@@ -7,8 +7,6 @@ import { StyledContent } from './styles';
 const Layout = ({ user, children }) => {
   return (
     <>
-      <MobileNav user={user}/>
-      <Sidebar user={user}/> 
       <StyledContent>
         <div>{children}</div>
       </StyledContent>

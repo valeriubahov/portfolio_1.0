@@ -28,7 +28,6 @@ font-style: normal;
 font-variant: normal;
 text-transform: none;
 padding-bottom: 1rem;
-padding-top: 3rem;
 padding-left:0.5rem;
 `;
 
@@ -46,7 +45,6 @@ font-style: normal;
 font-variant: normal;
 text-transform: none;
 padding-bottom: 1rem;
-padding-top: 3rem;
 padding-left:0.5rem;
 `;
 
@@ -56,16 +54,15 @@ align-items: center;
 justify-content: center;
 `;
 
+
 export const HomeDiv = styled.div`
-background-image: linear-gradient(to bottom right,#08b7dd,#1773dd);
 position: relative;
 overflow: hidden;
 height: auto;
 min-height: 560px;
 width: 100%;
 margin-right: auto;
-margin-left: auto;
-padding-top: 4.5rem;
+ margin-left: auto;
 max-width: 83%;
 @media (max-width: 640px) {
   max-width: 100%;
@@ -76,4 +73,42 @@ position: relative;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+margin-top: 4rem;
 `;
+
+export const LeftDiv = styled.div`
+background-color:white;
+position: relative;
+overflow: hidden;
+height: 100%;
+margin-right: auto;
+max-width: 50%;
+@media (max-width: 640px) {
+  max-width: 100%;
+}
+
+margin-right: auto;
+position: relative;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`;
+
+
+export const RightDiv = styled.div`
+background-color:white;
+position: relative;
+overflow: hidden;
+height: auto;
+margin-left: auto;
+max-width: 50%;
+@media (max-width: 640px) {
+  max-width: 100%;
+}
+margin-left: auto;
+position: relative;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+`;
+

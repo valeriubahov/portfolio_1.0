@@ -136,3 +136,27 @@ position: absolute;
     z-index: 1030;
 `;
 
+export const Footer = styled.footer`
+  text-align: center;
+  position: relative;
+    width: 100%;
+    max-width: 83%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  background-color:#343741;
+`;
+

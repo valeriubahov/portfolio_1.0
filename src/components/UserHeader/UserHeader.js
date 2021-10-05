@@ -1,44 +1,53 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import Typical from 'react-typical';
-import { HeaderContainer, H1, P, Scrollable, CenterDiv, AboutMe, H1Reverse} from './styles';
+import "react-image-gallery/styles/css/image-gallery.css";
+import { AboutMe, CenterDiv, HeaderContainer, H1, P } from './styles';
 
-const steps = [
-  "Frontend Developer", 1000,
-  "React Developer", 1000,
-  "Backend Developer", 1000,
-  "Full-stack Developer", 1000
+import Bath1 from '../../images/Bathroom1.jpg';
+import Bath2 from '../../images/Bathroom2.jpg';
+
+import Kitchen1 from '../../images/Kitchen1.jpg';
+import Kitchen2 from '../../images/Kitchen2.jpg';
+
+import ImageGallery from 'react-image-gallery';
+
+const images = [
+  {
+    original: Bath1,
+    thumbnail: Bath1,
+  },
+  {
+    original: Bath2,
+    thumbnail: Bath2,
+  },
+  {
+    original: Kitchen1,
+    thumbnail: Kitchen1,
+  },
+  {
+    original: Kitchen2,
+    thumbnail: Kitchen2,
+  },
 ];
+
 const UserHeader = ({ user }) => {
   const location = useLocation();
   return (
     <HeaderContainer isHome={location.pathname !== '/'}>
       <AboutMe>
-          <Scrollable>
-            <H1>Hi,</H1>
-            <H1>my name is</H1>
-            <br></br>
-              <H1Reverse>{user.basics.name}</H1Reverse>
-            <br></br>
-            <CenterDiv>
-              <H1>I am a</H1>
-            </CenterDiv>
-            <CenterDiv>
-          <Typical
-            steps={steps}
-            loop={Infinity}
-            wrapper="b"
-          />
+        <CenterDiv>
+          <H1>Costantin Bulgaru Company</H1>
         </CenterDiv>
-            <P>Based in {user.basics.region}</P>
-            <P>With {user.basics.yearsOfExperience} years of experience as a Developer</P>
-            <P>{user.basics.headline}</P>
-          </Scrollable>
-          
       </AboutMe>
-    
-      </HeaderContainer>
-  
+      <ImageGallery items={images} autoPlay={true} />
+      <AboutMe>
+        <CenterDiv>
+          <P> We specialize in bathroom and kitchen renovations projects. Whether you are looking to redo a small bathroom or kitchen,
+            our experienced team uses high standards of craftsmanship to get the project completed on time and within budget.
+          </P>
+        </CenterDiv>
+      </AboutMe>
+    </HeaderContainer>
   );
 };
 

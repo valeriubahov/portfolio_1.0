@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://valeriubahov.ml",
+  "homepage": "https://valeriubahov.ml",
   "dependencies": {
     "@carbon/icons-react": "^10.8.2",
     "@carbon/themes": "^10.9.3",

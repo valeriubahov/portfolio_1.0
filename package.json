@@ -13,7 +13,7 @@
     "carbon-components-react": "^7.43.0",
     "d3-ease": "^3.0.1",
     "gh-pages": "^3.2.3",
-    "node-sass": "^6.0.1",
+    "node-sass": "^7.0.0",
     "react": "^17.0.2",
     "react-animated-slider": "^2.0.0",
     "react-circular-progressbar": "^2.0.4",
